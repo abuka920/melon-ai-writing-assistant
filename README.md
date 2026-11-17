@@ -1,5 +1,7 @@
 # 🍈 Melon AI
 
+**Live demo:** https://kalif-melon-ai.streamlit.app (bring your own OpenAI key)
+
 A personal writing assistant that drafts emails, captions, DMs and job messages in my voice.
 
 I wrote out how I actually talk (calm, direct, short sentences, no fluff) and turned it into a system prompt. Melon uses that to write drafts I can send with little or no editing.
