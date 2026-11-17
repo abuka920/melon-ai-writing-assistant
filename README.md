@@ -1,32 +1,40 @@
-# Melon AI – Your Personal Writing Assistant
+# 🍈 Melon AI
 
-Melon AI is a personal writing assistant trained on my real tone, personality, and communication style. It was built using Streamlit and OpenAI, and designed to help me write emails, captions, messages, and replies that sound exactly like me.
+A personal writing assistant that drafts emails, captions, DMs and job messages in my voice.
 
-## 🔧 Tech Stack
-- Python
-- Streamlit
-- OpenAI GPT-3.5 API
+I wrote out how I actually talk (calm, direct, short sentences, no fluff) and turned it into a system prompt. Melon uses that to write drafts I can send with little or no editing.
 
-## 💡 Features
-- Generates emails, captions, DMs, and job messages in my tone
-- Uses real WhatsApp data to train the writing voice
-- Web-based UI built with Streamlit
-- Can be extended with memory, scheduling, and voice input
+## Features
 
-## 🚀 How to Run
+- Six formats: Email, Caption, DM Reply, Job Message, LinkedIn Post, Custom
+- Short, medium or long drafts
+- Optional extra direction like "a bit warmer" or "mention I'm free Monday"
+- One-click copy of the draft
+- Works with a key from secrets, an environment variable, or pasted into the sidebar
+
+## Stack
+
+`Python` `Streamlit` `OpenAI API (gpt-4o-mini)`
+
+## Run it
 
 ```bash
 pip install -r requirements.txt
 streamlit run ai.py
 ```
 
-## ⚠️ API Key
+Add your OpenAI key one of three ways:
 
-To use this, create a `.streamlit/secrets.toml` file with your own OpenAI key:
+1. Copy `.streamlit/secrets.toml.example` to `.streamlit/secrets.toml` and paste your key
+2. Set `OPENAI_API_KEY` in your environment
+3. Paste it into the sidebar when the app opens
 
-```toml
-openai_api_key = "your-api-key-here"
-```
+`secrets.toml` is gitignored, so your key never gets committed.
 
-## 👨🏾‍💻 Built by Kalif Abu  
-LinkedIn: [@kalifabu](https://linkedin.com/in/kalifabu)
+## Make it sound like you
+
+Edit the `VOICE` text at the top of `ai.py`. Describe how you write and what you avoid.
+
+---
+
+Built by **Kalif Abu** · [LinkedIn](https://linkedin.com/in/kalifabu)
