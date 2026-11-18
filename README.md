@@ -39,4 +39,4 @@ Edit the `VOICE` text at the top of `ai.py`. Describe how you write and what you
 
 ---
 
-Built by **Kalif Abu** · [LinkedIn](https://linkedin.com/in/kalifabu)
+Built by **Kalif Abu** · [LinkedIn](https://linkedin.com/in/kalif-abu-262430264)
